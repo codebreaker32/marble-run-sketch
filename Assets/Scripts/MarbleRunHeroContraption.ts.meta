@@ -1,0 +1,47 @@
+- !<AssetImportMetadata/c6979234-921b-4ff5-b6df-f1f12102ed64>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 18a2dea4-d15f-4291-b0ac-22d651b040cf
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 18a2dea4-d15f-4291-b0ac-22d651b040cf
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> bfcab8bd-c09e-4182-9b49-3d8a493d0f8d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/bfcab8bd-c09e-4182-9b49-3d8a493d0f8d>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: d59e4ab9-f825-43c0-b51f-1591d47d50e9
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    {}
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    -
+      {}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunHeroContraption – hero track, bell, shelf, dominoes</span>"}'

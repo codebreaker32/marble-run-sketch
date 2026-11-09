@@ -1,0 +1,65 @@
+- !<AssetImportMetadata/6d9f6d15-d815-4746-a9ad-d4809d2bdd98>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 48e54d87-5b49-4573-8c5a-44948616efc8
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 48e54d87-5b49-4573-8c5a-44948616efc8
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 7b3874ff-213d-497e-b046-6ea58389e190
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/7b3874ff-213d-497e-b046-6ea58389e190>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 0d0ad477-da2f-4a1a-b17c-56b59b21f50b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    cup: false
+    maxTracks: false
+    minTrackLengthCm: false
+    previewRebuildHz: false
+    snapRangeCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - cup: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      minTrackLengthCm: !<float> 10.000000
+      snapRangeCm: !<float> 16.000000
+      previewRebuildHz: !<float> 12.000000
+      maxTracks: !<float> 12.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunTrackManager – sketch to U-channel track</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - "// @input AssignableType_1 cup {\"hint\":\"Goal cup, used to snap a stroke's end into its rim\"}"
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float minTrackLengthCm = 10 {"hint":"Shortest stroke that becomes a track (cm)", "widget":"slider", "min":3, "max":30, "step":1}'
+    - '// @input float snapRangeCm = 16 {"hint":"A stroke ending within this distance of the cup snaps into its rim (cm)", "widget":"slider", "min":6, "max":30, "step":1}'
+    - '// @input float previewRebuildHz = 12 {"hint":"Max rebuilds per second of the live drawing preview", "widget":"slider", "min":5, "max":30, "step":1}'
+    - '// @input float maxTracks = 12 {"hint":"Maximum tracks kept; drawing past this removes the oldest", "widget":"slider", "min":3, "max":30, "step":1}'
+    - '// @ui {"widget":"group_end"}'

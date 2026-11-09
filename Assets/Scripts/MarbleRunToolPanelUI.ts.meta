@@ -1,0 +1,65 @@
+- !<AssetImportMetadata/390a0cdf-5b63-486c-8dee-42603eb54f5d>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 6712b9e7-f28d-4e4f-9d63-cc3b7987c4fa
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 6712b9e7-f28d-4e4f-9d63-cc3b7987c4fa
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 01b05bec-9ab7-4efd-89c1-3745361a35d1
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/01b05bec-9ab7-4efd-89c1-3745361a35d1>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: afc9fa37-69a6-4c28-9aa1-8d321f1c5195
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    accentColor: false
+    buttonSizeCm: false
+    labelFontSize: false
+    scoreFontSize: false
+    statusFontSize: false
+    titleText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - titleText: Marble Run
+      accentColor: !<Vec4> {x: 0.450000, y: 0.920000, z: 1.000000, w: 1.000000}
+      buttonSizeCm: 4.600000
+      labelFontSize: !<float> 37.000000
+      statusFontSize: !<float> 46.000000
+      scoreFontSize: !<float> 96.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunToolPanelUI – tool panel (passive view)</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input string titleText = "Marble Run" {"hint":"Title shown in the panel header"}'
+    - '// @input vec4 accentColor = "{0.45,0.92,1.0,1}" {"hint":"Accent colour for the score number", "widget":"color"}'
+    - '// @input float buttonSizeCm = 4.6 {"hint":"Size of each tool button (cm)", "widget":"slider", "min":3.4, "max":7, "step":0.1}'
+    - '// @input float labelFontSize = 37 {"hint":"Text size of button labels", "widget":"slider", "min":20, "max":70, "step":1}'
+    - '// @input float statusFontSize = 46 {"hint":"Text size of the status line", "widget":"slider", "min":20, "max":80, "step":1}'
+    - '// @input float scoreFontSize = 96 {"hint":"Text size of the score number", "widget":"slider", "min":40, "max":180, "step":1}'
+    - '// @ui {"widget":"group_end"}'

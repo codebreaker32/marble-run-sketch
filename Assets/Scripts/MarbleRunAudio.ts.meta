@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/c9c3f072-830b-4985-a483-b4419c9ed809>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 5a9808dd-aca7-4886-90ca-4a59024c82a5
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 5a9808dd-aca7-4886-90ca-4a59024c82a5
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 249445b5-66b3-4834-b07d-44ad42fc96ae
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/249445b5-66b3-4834-b07d-44ad42fc96ae>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 92b30eb4-f409-4395-a536-1914eee80609
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    musicVolume: false
+    sfxVolume: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - sfxVolume: 0.900000
+      musicVolume: 0.250000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunAudio – sound effect pools + music bed</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float sfxVolume = 0.9 {"hint":"Master volume for sound effects", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @input float musicVolume = 0.25 {"hint":"Volume of the background music bed", "widget":"slider", "min":0, "max":1, "step":0.05}'
+    - '// @ui {"widget":"group_end"}'

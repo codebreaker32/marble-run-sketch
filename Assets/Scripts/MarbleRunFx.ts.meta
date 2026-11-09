@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/5976d331-7241-4093-bc42-0a99a3b9fba6>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 400b60ee-2ec5-42ce-b6b0-bf38f4224169
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 400b60ee-2ec5-42ce-b6b0-bf38f4224169
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> fd3493a8-bea4-4709-a9c8-3fa05512515b
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/fd3493a8-bea4-4709-a9c8-3fa05512515b>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 6ad20722-5dc5-4b44-b226-f544fb66bba9
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    launchSpeed: false
+    pieceSizeCm: false
+    piecesPerBurst: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - piecesPerBurst: !<float> 34.000000
+      pieceSizeCm: 2.200000
+      launchSpeed: !<float> 170.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunFx – goal confetti burst</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float piecesPerBurst = 34 {"hint":"Confetti pieces per burst", "widget":"slider", "min":8, "max":60, "step":1}'
+    - '// @input float pieceSizeCm = 2.2 {"hint":"Size of a confetti card (cm)", "widget":"slider", "min":0.5, "max":4, "step":0.1}'
+    - '// @input float launchSpeed = 170 {"hint":"Upward launch speed (cm/s)", "widget":"slider", "min":40, "max":300, "step":5}'
+    - '// @ui {"widget":"group_end"}'

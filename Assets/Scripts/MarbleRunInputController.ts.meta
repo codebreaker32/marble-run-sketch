@@ -1,0 +1,59 @@
+- !<AssetImportMetadata/70f67710-414f-4300-9288-8dfc89640493>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f1db2585-9f48-4c09-b9e5-25cba01ea165
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f1db2585-9f48-4c09-b9e5-25cba01ea165
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 4bb02d8b-7624-478f-a46a-5139eb417111
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/4bb02d8b-7624-478f-a46a-5139eb417111>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 5e52ba9f-7e87-4cb8-8aa4-dbf18c9471c3
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    aimRayLengthCm: false
+    editorDrawDepthCm: false
+    inputSmoothing: false
+    minPointSpacingCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - editorDrawDepthCm: !<float> 60.000000
+      minPointSpacingCm: 1.500000
+      inputSmoothing: 0.500000
+      aimRayLengthCm: !<float> 400.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunInputController – pinch to sketch + aim</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - "// @input float editorDrawDepthCm = 60 {\"hint\":\"Fallback distance from the camera for mouse strokes when the draw plane can't be hit (cm)\", \"widget\":\"slider\", \"min\":25, \"max\":120, \"step\":1}"
+    - '// @input float minPointSpacingCm = 1.5 {"hint":"Minimum distance between recorded stroke samples (cm)", "widget":"slider", "min":0.5, "max":4, "step":0.1}'
+    - '// @input float inputSmoothing = 0.5 {"hint":"Input smoothing (0 = raw hand position, 0.9 = very smooth / laggy)", "widget":"slider", "min":0, "max":0.9, "step":0.05}'
+    - '// @input float aimRayLengthCm = 400 {"hint":"Length of the placement aim ray (cm)", "widget":"slider", "min":100, "max":600, "step":10}'
+    - '// @ui {"widget":"group_end"}'

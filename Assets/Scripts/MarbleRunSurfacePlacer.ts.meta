@@ -1,0 +1,59 @@
+- !<AssetImportMetadata/e36882d9-01bf-498e-800f-e6af09e641bd>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f3bd02fd-872e-4171-a508-4c5745069cf3
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f3bd02fd-872e-4171-a508-4c5745069cf3
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 11a563fb-45a9-4386-8cd9-9447d37638e5
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/11a563fb-45a9-4386-8cd9-9447d37638e5>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: b9012123-138e-436f-bcf5-ff35d1f64a5c
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    maxSurfaceTiltDeg: false
+    reticle: false
+    worldHitHoldSec: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - reticle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      maxSurfaceTiltDeg: !<float> 20.000000
+      worldHitHoldSec: 0.500000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunSurfacePlacer – World Query surface + reticle</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject reticle {"hint":"Reticle shown where the Floor/Goal placement will land"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float maxSurfaceTiltDeg = 20 {"hint":"Maximum tilt from horizontal for a surface to count as a table (degrees)", "widget":"slider", "min":5, "max":45, "step":1}'
+    - '// @input float worldHitHoldSec = 0.5 {"hint":"How long a World Query hit stays valid for confirm after it arrives (s)", "widget":"slider", "min":0.1, "max":1.5, "step":0.05}'
+    - '// @ui {"widget":"group_end"}'

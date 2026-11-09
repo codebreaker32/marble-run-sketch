@@ -1,0 +1,59 @@
+- !<AssetImportMetadata/ebd50526-2a27-43a7-8d7c-5fa7d2c8035b>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> cb19c643-a0df-419d-accc-a7406b8ae5d7
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> cb19c643-a0df-419d-accc-a7406b8ae5d7
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> b5f3bafa-5489-4dc3-ae57-fc83209b4704
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/b5f3bafa-5489-4dc3-ae57-fc83209b4704>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 013e2f89-21cd-4226-8b83-21df85abbac3
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    groundY: false
+    tableHeightCm: false
+    topDepthCm: false
+    topLengthCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - topLengthCm: !<float> 100.000000
+      topDepthCm: !<float> 62.000000
+      tableHeightCm: !<float> 74.000000
+      groundY: !<float> 0.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #FFB74D;\">PREVIEW STAND-IN (editor only) – a picnic table on the simulated ground</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float topLengthCm = 100 {"hint":"Tabletop length (cm)", "widget":"slider", "min":70, "max":140, "step":1}'
+    - '// @input float topDepthCm = 62 {"hint":"Tabletop depth (cm)", "widget":"slider", "min":45, "max":90, "step":1}'
+    - '// @input float tableHeightCm = 74 {"hint":"Tabletop height above the simulated ground (cm)", "widget":"slider", "min":60, "max":90, "step":1}'
+    - "// @input float groundY {\"hint\":\"World Y of the simulated ground (cm); the table's feet rest here\", \"widget\":\"slider\", \"min\":-30, \"max\":30, \"step\":0.5}"
+    - '// @ui {"widget":"group_end"}'

@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/e5f2070d-195e-4a3a-a43f-fd5b1ffe892c>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 7bbd6630-c9b9-4b39-a845-1336022596e0
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 7bbd6630-c9b9-4b39-a845-1336022596e0
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 28d37faa-af38-4207-8bd6-cfc1e0d1885b
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/28d37faa-af38-4207-8bd6-cfc1e0d1885b>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 2e4f8e2d-170b-46b3-941f-42ba3cf76a48
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    innerRadiusCm: false
+    wallHeightCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - innerRadiusCm: 5.600000
+      wallHeightCm: 9.300000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunGoalCup – cup colliders + goal trigger</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float innerRadiusCm = 5.6 {"hint":"Inner radius of the cup opening (cm); must match the GoalCup mesh", "widget":"slider", "min":3, "max":10, "step":0.1}'
+    - '// @input float wallHeightCm = 9.3 {"hint":"Height of the cup walls (cm); must match the GoalCup mesh", "widget":"slider", "min":4, "max":15, "step":0.1}'
+    - '// @ui {"widget":"group_end"}'

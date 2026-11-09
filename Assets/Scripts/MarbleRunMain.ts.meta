@@ -1,0 +1,110 @@
+- !<AssetImportMetadata/17b065c2-2035-4d53-8c35-31327c588f8e>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 130910fc-d408-4ac5-8c71-dc5b9d75622a
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 130910fc-d408-4ac5-8c71-dc5b9d75622a
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> ae650ec0-e78d-40ad-984a-915f74dce047
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/ae650ec0-e78d-40ad-984a-915f74dce047>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: db478d98-9e6f-448a-b938-0ad9b3860606
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    audio: false
+    autoRunChainCount: false
+    contraption: false
+    debugCameraPose: false
+    debugColliders: false
+    fx: false
+    goalBanner: false
+    goalCup: false
+    inputController: false
+    marbles: false
+    panelDistanceCm: false
+    pieces: false
+    playArea: false
+    playDistanceCm: false
+    standIn: false
+    surface: false
+    toolPanel: false
+    tracks: false
+    uiRoot: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - toolPanel: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      goalBanner: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      playArea: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      uiRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      contraption: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      tracks: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      pieces: !<MappingBased.AssignableType_5> 00000000-0000-0000-0000-000000000000
+      marbles: !<MappingBased.AssignableType_6> 00000000-0000-0000-0000-000000000000
+      inputController: !<MappingBased.AssignableType_7> 00000000-0000-0000-0000-000000000000
+      surface: !<MappingBased.AssignableType_8> 00000000-0000-0000-0000-000000000000
+      goalCup: !<MappingBased.AssignableType_9> 00000000-0000-0000-0000-000000000000
+      audio: !<MappingBased.AssignableType_10> 00000000-0000-0000-0000-000000000000
+      fx: !<MappingBased.AssignableType_11> 00000000-0000-0000-0000-000000000000
+      standIn: !<MappingBased.AssignableType_12> 00000000-0000-0000-0000-000000000000
+      playDistanceCm: !<float> 47.000000
+      panelDistanceCm: !<float> 47.000000
+      autoRunChainCount: !<float> 0.000000
+      debugColliders: false
+      debugCameraPose: !<float> 0.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunMain – orchestrates Marble Run</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 toolPanel {"hint":"Tool panel (UIKit module)"}'
+    - '// @input AssignableType_2 goalBanner {"hint":"Big GOAL! text above the cup"}'
+    - '// @input SceneObject playArea {"hint":"Root of all play content, placed on the table"}'
+    - '// @input SceneObject uiRoot {"hint":"Parent of the tool panel, moved next to the user at start"}'
+    - '// @input AssignableType_3 contraption {"hint":"Ready-made chain reaction"}'
+    - '// @input AssignableType_4 tracks {"hint":"Drawn tracks"}'
+    - '// @input AssignableType_5 pieces {"hint":"Placed bells and dominoes"}'
+    - '// @input AssignableType_6 marbles {"hint":"Spawns and retires marbles"}'
+    - '// @input AssignableType_7 inputController {"hint":"Pinch-to-sketch and aim input"}'
+    - '// @input AssignableType_8 surface {"hint":"World Query floor + reticle"}'
+    - '// @input AssignableType_9 goalCup {"hint":"Goal cup colliders + trigger"}'
+    - '// @input AssignableType_10 audio {"hint":"Sound effects + music"}'
+    - '// @input AssignableType_11 fx {"hint":"Goal confetti"}'
+    - '// @input AssignableType_12 standIn {"hint":"Editor-only stand-in picnic table"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float playDistanceCm = 47 {"hint":"Horizontal distance from the user to the play area origin (cm)", "widget":"slider", "min":30, "max":70, "step":1}'
+    - "// @input float panelDistanceCm = 47 {\"hint\":\"Distance from the user's head to the tool panel (cm)\", \"widget\":\"slider\", \"min\":35, \"max\":70, \"step\":1}"
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Debug"}'
+    - '// @input float autoRunChainCount {"hint":"Editor only: run the hero chain this many times after start-up and print a PASS/FAIL summary", "widget":"slider", "min":0, "max":20, "step":1}'
+    - '// @input bool debugColliders {"hint":"Editor only: wireframe all physics colliders"}'
+    - '// @input float debugCameraPose {"hint":"Editor only: hold the camera at a fixed review pose: 0 off, 1 overview, 2 left, 3 right, 4 top, 5 panel, 6 bell, 7 cup, 8 head", "widget":"slider", "min":0, "max":8, "step":1}'
+    - '// @ui {"widget":"group_end"}'

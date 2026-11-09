@@ -1,0 +1,59 @@
+- !<AssetImportMetadata/f03a324d-56ae-40bd-b080-33e66a38046c>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 9e523560-b6bd-4ece-9fc6-1f6b7338a545
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 9e523560-b6bd-4ece-9fc6-1f6b7338a545
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 18ea07aa-2cbe-4a61-91fd-145012df02df
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/18ea07aa-2cbe-4a61-91fd-145012df02df>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: e2d5c396-cb3f-4971-aefc-59e50419784f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    marbleRadiusCm: false
+    maxMarbles: false
+    restLifetimeSec: false
+    rollDamping: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - maxMarbles: !<float> 8.000000
+      marbleRadiusCm: !<float> 0.000000
+      rollDamping: 0.750000
+      restLifetimeSec: 1.500000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunMarblePool – pooled physics marbles</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float maxMarbles = 8 {"hint":"Maximum marbles alive at once; the oldest free marble is recycled beyond this", "widget":"slider", "min":2, "max":16, "step":1}'
+    - '// @input float marbleRadiusCm = 1.75 {"hint":"Marble radius (cm)", "widget":"slider", "min":1, "max":2.5, "step":0.05}'
+    - '// @input float rollDamping = 0.05 {"hint":"Linear damping on marbles: keeps speed bounded in the channel (0.8 = strong)", "widget":"slider", "min":0.05, "max":0.95, "step":0.05}'
+    - '// @input float restLifetimeSec = 1.5 {"hint":"A marble resting this long (s) shrinks away", "widget":"slider", "min":0.3, "max":3, "step":0.1}'
+    - '// @ui {"widget":"group_end"}'

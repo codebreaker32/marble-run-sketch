@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/43659182-c961-4ca7-82ff-05b0ec9a6569>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> d4cbffaa-af85-414b-84db-8169a9c532ef
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> d4cbffaa-af85-414b-84db-8169a9c532ef
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> b9c6778e-b6a2-458d-b680-59a816eff61e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/b9c6778e-b6a2-458d-b680-59a816eff61e>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: a10b3c38-6d61-494c-a02b-969b7ffe4209
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    gravityScale: false
+    simulationRateHz: false
+    speedLimit: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - simulationRateHz: !<float> 240.000000
+      gravityScale: !<float> 1.000000
+      speedLimit: !<float> 400.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunPhysicsWorld – physics world for the play area</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float simulationRateHz = 240 {"hint":"Physics steps per second. Higher is more stable for small marbles and thin dominoes, but costs CPU", "widget":"combobox", "values":[{"label":"120 Hz", "value":120}, {"label":"180 Hz", "value":180}, {"label":"240 Hz", "value":240}]}'
+    - '// @input float gravityScale = 1 {"hint":"Gravity strength multiplier (1 = real-world 980 cm/s^2)", "widget":"slider", "min":0.3, "max":1.2, "step":0.05}'
+    - '// @input float speedLimit = 400 {"hint":"Hard speed limit for any body (cm/s). Keeps marbles from tunnelling through thin walls", "widget":"slider", "min":150, "max":800, "step":10}'
+    - '// @ui {"widget":"group_end"}'

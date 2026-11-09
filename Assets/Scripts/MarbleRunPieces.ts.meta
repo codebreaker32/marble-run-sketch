@@ -1,0 +1,50 @@
+- !<AssetImportMetadata/0ad55226-3433-445e-8d34-d1e6a2325f9c>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 51559537-0f3c-4753-ae3e-c0c5f700894f
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 51559537-0f3c-4753-ae3e-c0c5f700894f
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 48674c1e-04e8-4cee-8fdf-84a73dba03fe
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/48674c1e-04e8-4cee-8fdf-84a73dba03fe>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 04e0f012-c7c2-4641-8ada-e847331d99f4
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bellCrossbarHeightCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - bellCrossbarHeightCm: !<float> 15.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MarbleRunPieces – placed bells and dominoes</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - "// @input float bellCrossbarHeightCm = 15 {\"hint\":\"Height of a placed bell's crossbar above the table (cm)\", \"widget\":\"slider\", \"min\":10, \"max\":30, \"step\":0.5}"
+    - '// @ui {"widget":"group_end"}'
